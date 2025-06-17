@@ -1,0 +1,17 @@
+name: RVCK
+
+on:
+  pull_request:
+    types: [opened, reopened]
+  issues:
+    types: [opened, reopened]
+  issue_comment:
+    types: [created]
+
+jobs:
+  rvck:
+    uses: OERV-RVCI/RVCK-pipeline/.github/workflows/rava-actions.yml@actions
+    secrets: inherit
+    # permissions:
+    #   issues: write
+    #   pull-requests: write
