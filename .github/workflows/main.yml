@@ -1,6 +1,7 @@
 name: RVCK
 
 on:
+  push:
   pull_request:
     types: [opened, reopened]
   issues:
