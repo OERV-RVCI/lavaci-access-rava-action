@@ -1,3 +1,5 @@
+####### RAVA actions test #################
+
 # Your first LAVA JOB definition for an riscv_64 QEMU
 device_type: qemu
 job_name: ${qemu_job_name}
