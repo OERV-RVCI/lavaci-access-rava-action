@@ -15,7 +15,8 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
-    secrets: inherit
+    secrets:
+      lava_token: secrets.LAVA_TOKEN
     # permissions:
     #   issues: write
     #   pull-requests: write
