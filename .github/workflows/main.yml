@@ -12,8 +12,7 @@ on:
 jobs:
   rvck:
     uses: OERV-RVCI/RVCK-pipeline/.github/workflows/rava-actions.yml@actions
-    secrets:
-      lava_token: secrets.LAVA_TOKEN
+    secrets: inherit
     # permissions:
     #   issues: write
     #   pull-requests: write
