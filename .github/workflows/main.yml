@@ -16,6 +16,6 @@ jobs:
     uses: OERV-RVCI/RVCK-pipeline/.github/workflows/rava-actions.yml@actions
     secrets:
       lava_token: ${{ secrets.LAVA_TOKEN }}
-    # permissions:
-    #   issues: write
-    #   pull-requests: write
+    permissions:
+      issues: write
+      pull-requests: write
