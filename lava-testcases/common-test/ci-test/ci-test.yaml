@@ -1,0 +1,26 @@
+metadata:
+    name: ci-test
+    format: "Lava-Test Test Definition 1.0"
+    description: "Checkout PR code"
+    maintainer:
+        - wangliu@iscas.ac.cn
+    os:
+        - openEuler-riscv64
+    scope:
+        - functional
+    devices:
+      - qemu
+      - lpi4a
+      - sg2042
+params:
+    PR_ID: ""
+    JOB_NAME: ""  
+run:
+    steps:
+        - dnf makecache 
+        - dnf install -y git 
+        - pushd ../*_${JOB_NAME}
+        - git fetch origin pull/${PR_ID}/head:pr-${PR_ID}
+        - git checkout pr-${PR_ID}
+        - git log -3
+        - popd 
