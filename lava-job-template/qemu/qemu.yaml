@@ -68,3 +68,4 @@ actions:
       name: ${testitem_name}
       path: ${testcase_url}
       repository: ${testcase_repo}
+      rivision: ${testcase_ref}
