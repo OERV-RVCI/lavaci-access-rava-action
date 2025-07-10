@@ -1,0 +1,19 @@
+metadata:
+    name: ci-test-job
+    format: "Lava-Test Test Definition 1.0"
+    description: "Checkout PR code"
+    maintainer:
+        - wangliu@iscas.ac.cn
+    os:
+        - openEuler-riscv64
+    scope:
+        - functional
+    devices:
+      - qemu
+      - lpi4a
+      - sg2042
+run:
+    steps:
+        - pwd
+        - ls -alh
+        - git log -3
