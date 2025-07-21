@@ -1,9 +1,6 @@
 name: RAVA CI
 
 on:
-  push:
-  # pull_request:
-  #   types: [opened, reopened]
   pull_request_target:
     types: [opened, reopened, synchronize]
   issues:
@@ -13,7 +10,7 @@ on:
 
 jobs:
   rvck:
-    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/issue-10
+    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/result-show
     secrets:
       lava_token: ${{ secrets.LAVA_TOKEN }}
     permissions:
