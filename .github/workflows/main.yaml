@@ -1,13 +1,13 @@
 name: RAVA CI
 
 on:
-  push:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
-  issues:
-    types: [opened, reopened]
-  issue_comment:
-    types: [created]
+  # push:
+  # pull_request_target:
+  #   types: [opened, reopened, synchronize]
+  # issues:
+  #   types: [opened, reopened]
+  # issue_comment:
+  #   types: [created]
 
 jobs:
   RAVA:
