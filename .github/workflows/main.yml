@@ -10,7 +10,7 @@ on:
 
 jobs:
   rvck:
-    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/result-show
+    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/setup-lava-template-15
     secrets:
       lava_token: ${{ secrets.LAVA_TOKEN }}
     permissions:
