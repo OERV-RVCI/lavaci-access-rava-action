@@ -1,18 +1,18 @@
-name: RAVA CI
+# name: RAVA CI
 
-on:
-  pull_request_target:
-    types: [opened, reopened, synchronize]
-  issues:
-    types: [opened, reopened]
-  issue_comment:
-    types: [created]
+# on:
+#   pull_request_target:
+#     types: [opened, reopened, synchronize]
+#   issues:
+#     types: [opened, reopened]
+#   issue_comment:
+#     types: [created]
 
-jobs:
-  rvck:
-    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/setup-lava-template-15
-    secrets:
-      lava_token: ${{ secrets.LAVA_TOKEN }}
-    permissions:
-      issues: write
-      pull-requests: write
+# jobs:
+#   rvck:
+#     uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@develop/setup-lava-template-15
+#     secrets:
+#       lava_token: ${{ secrets.LAVA_TOKEN }}
+#     permissions:
+#       issues: write
+#       pull-requests: write
