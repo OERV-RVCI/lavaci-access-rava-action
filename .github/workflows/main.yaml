@@ -11,7 +11,7 @@ on:
 
 jobs:
   RAVA:
-    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@lava-add-hardware-support
+    uses: OERV-RVCI/RVCK-RAVA/.github/workflows/rava-actions.yml@lava-wait-attempts
     secrets:
       lava_token: ${{ secrets.LAVA_TOKEN }}
     permissions:
